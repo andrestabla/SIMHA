@@ -7,24 +7,72 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__overlay"></div>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg/1200px-Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg.png" alt="Escudo Policía Nacional">
+        <div>
+          <div>Escuela Nacional de Policía</div>
+          <small>Dirección de Educación Policial - DIEPO</small>
+        </div>
+      </div>
+      <div class="nav__menu">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#curricular">Oferta académica</a>
+        <a href="#alcance">Escuelas de formación</a>
+        <a href="#transparencia">Transparencia</a>
+        <a href="#noticias">Noticias / convocatorias</a>
+        <a href="login.html" class="btn primary">Ingresar</a>
+      </div>
+    </nav>
+  </header>
+
+  <header class="hero" id="inicio">
     <div class="hero__content">
       <p class="eyebrow">Prototipo ejecutable en HTML</p>
       <h1>SIMHA · Sistema para la Movilidad y Homologación Académica</h1>
       <p class="lead">Aplicativo orientado a los comités académicos de la DIEPO para agilizar la evaluación de solicitudes, cumplir la normativa colombiana y fortalecer la movilidad formativa del personal policial.</p>
       <div class="hero__actions">
-        <a href="#solicitudes" class="btn primary">Simular solicitud</a>
+        <a href="#solicitudes" class="btn secondary">Simular solicitud</a>
         <a href="#dashboard" class="btn ghost">Ver indicadores</a>
+        <a href="login.html" class="btn">Acceso comités</a>
       </div>
       <div class="pill">Cubre Ley 115, Ley 30, Ley 749, Decreto 1075 y Manual Académico DIEPO 2025</div>
     </div>
   </header>
 
   <main>
+    <section class="panel" id="carrusel">
+      <div class="carousel">
+        <div class="carousel__image" id="carousel-image"></div>
+        <div class="carousel__content">
+          <h3 id="carousel-title">Movilidad académica DIEPO</h3>
+          <p id="carousel-body">Rotación de mensajes institucionales sobre formación, convocatorias y transparencia.</p>
+          <div class="carousel__controls">
+            <button class="btn" id="carousel-prev">◀ Anterior</button>
+            <button class="btn" id="carousel-next">Siguiente ▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="accesos">
+      <div class="panel__header">
+        <h2>Accesos rápidos</h2>
+        <p>Enlaces institucionales y sistemas integrados: aulas virtuales, SNIES, PQRS y SIEDPOL.</p>
+      </div>
+      <div class="quick-links">
+        <a href="#curricular">Base curricular consolidada</a>
+        <a href="#dashboard">Dashboard de indicadores</a>
+        <a href="#concepto">Conceptos preliminares</a>
+        <a href="#transparencia">Documentos oficiales</a>
+        <a href="login.html">Login de comités</a>
+      </div>
+    </section>
+
     <section id="objetivo" class="panel">
       <div class="panel__header">
         <h2>Objetivo del PMV</h2>
@@ -95,13 +143,14 @@
 
     <section id="curricular" class="panel">
       <div class="panel__header">
-        <h2>Base curricular consolidada</h2>
+        <h2>Oferta académica y base curricular</h2>
         <p>Consulta rápida de programas DIEPO con asignaturas normalizadas (créditos a 48 h, contenidos sintéticos y nivel).</p>
         <div class="filters">
           <label>Filtrar por nivel:
             <select id="filter-level">
               <option value="todos">Todos</option>
-              <option value="Técnico">Técnico</option>
+              <option value="Técnico Laboral">Técnico Laboral</option>
+              <option value="Técnico Profesional">Técnico Profesional</option>
               <option value="Tecnológico">Tecnológico</option>
               <option value="Pregrado">Pregrado</option>
               <option value="Posgrado">Posgrado</option>
@@ -217,10 +266,35 @@
         </article>
       </div>
     </section>
+
+    <section id="transparencia" class="panel">
+      <div class="panel__header">
+        <h2>Transparencia y normativa</h2>
+        <p>Vínculos a resoluciones, reglamentos, SNIES, Mineducación y SIEDPOL para consulta pública.</p>
+      </div>
+      <div class="card">
+        <p>En esta sección se referenciarán PDFs, acuerdos y políticas de privacidad institucionales. Incluye PQRS y mapa de sitio.</p>
+      </div>
+    </section>
+
+    <section id="noticias" class="panel">
+      <div class="panel__header">
+        <h2>Noticias y convocatorias</h2>
+        <p>Información de eventos académicos, inscripción a programas y testimonios de movilidad.</p>
+      </div>
+      <div class="card">
+        <p>Las publicaciones destacadas del portal institucional se mostrarán aquí con vínculos multimedia moderados.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>SIMHA · Prototipo PMV para la Dirección de Educación Policial · Datos de muestra con fines demostrativos.</p>
+    <div class="footer__content">
+      <strong>SIMHA · Prototipo PMV para la Dirección de Educación Policial</strong>
+      <small>Contacto: Calle 26 #52-21, Bogotá D.C. · Tel. (601) 515 97 00 · diepo@policia.gov.co</small>
+      <small>Política de privacidad · Términos de uso · Mapa del sitio · Síguenos en redes institucionales.</small>
+      <small>Datos de muestra con fines demostrativos.</small>
+    </div>
   </footer>
 
   <script src="script.js"></script>

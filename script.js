@@ -1,45 +1,233 @@
 const programs = [
   {
-    name: 'Tecnólogo en Seguridad Vial',
-    level: 'Tecnológico',
-    credits: 96,
+    name: 'Técnico Laboral en Guía Canino para la Detección de Explosivos',
+    level: 'Técnico Laboral',
+    credits: 48,
+    type: 'Certificación de aptitud ocupacional',
+    courses: [
+      { name: 'Ciencias del olfato aplicado', credits: 3, tag: 'operativo' },
+      { name: 'Seguridad en manejo de explosivos', credits: 4, tag: 'seguridad' },
+      { name: 'Condicionamiento y obediencia avanzada', credits: 3, tag: 'competencias' }
+    ]
+  },
+  {
+    name: 'Técnico Laboral por Competencias en Abastecimiento Aeronáutico',
+    level: 'Técnico Laboral',
+    credits: 50,
+    type: 'Certificación de aptitud ocupacional',
+    courses: [
+      { name: 'Logística aeroportuaria', credits: 3, tag: 'logística' },
+      { name: 'Cadena de suministro aeronáutica', credits: 3, tag: 'gestión' },
+      { name: 'Seguridad operacional básica', credits: 3, tag: 'seguridad' }
+    ]
+  },
+  {
+    name: 'Técnico Laboral por Competencias en Mantenimiento Aeronáutico',
+    level: 'Técnico Laboral',
+    credits: 52,
+    type: 'Certificación de aptitud ocupacional',
+    courses: [
+      { name: 'Motores y sistemas de aeronaves', credits: 4, tag: 'mantenimiento' },
+      { name: 'Normativa aeronáutica', credits: 3, tag: 'normativa' },
+      { name: 'Procedimientos de inspección', credits: 3, tag: 'inspección' }
+    ]
+  },
+  {
+    name: 'Técnico Profesional en Seguridad Vial (presencial)',
+    level: 'Técnico Profesional',
+    credits: 60,
+    type: 'Educación superior',
     courses: [
       { name: 'Legislación de tránsito', credits: 3, tag: 'normativa' },
       { name: 'Investigación de accidentes', credits: 4, tag: 'investigación' },
-      { name: 'Criminalística aplicada', credits: 3, tag: 'investigación' },
+      { name: 'Gestión comunitaria vial', credits: 2, tag: 'comunidad' }
+    ]
+  },
+  {
+    name: 'Técnico Profesional en Seguridad Vial (a distancia)',
+    level: 'Técnico Profesional',
+    credits: 60,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Normatividad de tránsito', credits: 3, tag: 'normativa' },
+      { name: 'Estadística aplicada a siniestralidad', credits: 3, tag: 'investigación' },
       { name: 'Primer respondiente', credits: 2, tag: 'operativo' }
     ]
   },
   {
-    name: 'Pregrado en Derecho Policial',
+    name: 'Técnico Profesional en Inteligencia y Contrainteligencia Policial',
+    level: 'Técnico Profesional',
+    credits: 64,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Fundamentos de inteligencia', credits: 3, tag: 'investigación' },
+      { name: 'Análisis de señales', credits: 3, tag: 'tecnologia' },
+      { name: 'Gestión de fuentes', credits: 3, tag: 'operativo' }
+    ]
+  },
+  {
+    name: 'Técnico Profesional en Investigación Criminal (Policía Judicial)',
+    level: 'Técnico Profesional',
+    credits: 64,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Cadena de custodia', credits: 3, tag: 'investigación' },
+      { name: 'Balística forense', credits: 3, tag: 'investigación' },
+      { name: 'Entrevista judicial', credits: 2, tag: 'derecho' }
+    ]
+  },
+  {
+    name: 'Tecnología en Gestión del Servicio de Policía',
+    level: 'Tecnológico',
+    credits: 96,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Gestión estratégica del servicio', credits: 3, tag: 'gestión' },
+      { name: 'Derecho policial', credits: 3, tag: 'normativa' },
+      { name: 'Ética y transparencia', credits: 2, tag: 'ética' }
+    ]
+  },
+  {
+    name: 'Tecnología en Mantenimiento Aeronáutico',
+    level: 'Tecnológico',
+    credits: 100,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Estructuras aeronáuticas', credits: 4, tag: 'mantenimiento' },
+      { name: 'Materiales compuestos', credits: 3, tag: 'tecnologia' },
+      { name: 'Calidad y seguridad aeronáutica', credits: 3, tag: 'seguridad' }
+    ]
+  },
+  {
+    name: 'Tecnología en Investigación de Accidentes de Tránsito',
+    level: 'Tecnológico',
+    credits: 96,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Reconstrucción de siniestros', credits: 4, tag: 'investigación' },
+      { name: 'Toma de evidencias', credits: 3, tag: 'investigación' },
+      { name: 'Responsabilidad civil y penal', credits: 3, tag: 'derecho' }
+    ]
+  },
+  {
+    name: 'Pregrado en Criminalística',
     level: 'Pregrado',
     credits: 160,
+    type: 'Educación superior',
     courses: [
-      { name: 'Derecho Penal I', credits: 3, tag: 'derecho' },
-      { name: 'Procedimiento Penal', credits: 3, tag: 'derecho' },
-      { name: 'Derecho Administrativo Policial', credits: 3, tag: 'normativa' },
-      { name: 'Investigación Criminal', credits: 4, tag: 'investigación' }
+      { name: 'Procesamiento de escena', credits: 4, tag: 'investigación' },
+      { name: 'Documentología forense', credits: 3, tag: 'investigación' },
+      { name: 'Bioética y derechos humanos', credits: 2, tag: 'ética' }
+    ]
+  },
+  {
+    name: 'Administración Policial',
+    level: 'Pregrado',
+    credits: 160,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Planeación estratégica', credits: 3, tag: 'gestión' },
+      { name: 'Finanzas públicas', credits: 3, tag: 'gestión' },
+      { name: 'Gestión del talento humano', credits: 3, tag: 'gestión' }
+    ]
+  },
+  {
+    name: 'Licenciatura en Educación Comunitaria en Derechos Humanos',
+    level: 'Pregrado',
+    credits: 150,
+    type: 'Educación superior',
+    courses: [
+      { name: 'Pedagogía comunitaria', credits: 3, tag: 'comunidad' },
+      { name: 'Derechos humanos', credits: 3, tag: 'derecho' },
+      { name: 'Diseño de proyectos sociales', credits: 3, tag: 'gestión' }
+    ]
+  },
+  {
+    name: 'Especialización en Poligrafía',
+    level: 'Posgrado',
+    type: 'Especialización técnica profesional',
+    credits: 28,
+    courses: [
+      { name: 'Fundamentos de poligrafía', credits: 3, tag: 'investigación' },
+      { name: 'Entrevista avanzada', credits: 2, tag: 'operativo' },
+      { name: 'Marco legal de la poligrafía', credits: 2, tag: 'normativa' }
+    ]
+  },
+  {
+    name: 'Especialización en Enfermería Canina',
+    level: 'Posgrado',
+    type: 'Especialización técnica profesional',
+    credits: 26,
+    courses: [
+      { name: 'Farmacología aplicada canina', credits: 3, tag: 'salud' },
+      { name: 'Trauma y emergencias K9', credits: 2, tag: 'salud' },
+      { name: 'Bioseguridad en unidades caninas', credits: 2, tag: 'seguridad' }
     ]
   },
   {
     name: 'Especialización en Investigación Criminal',
     level: 'Posgrado',
+    type: 'Especialización profesional',
     credits: 26,
     courses: [
-      { name: 'Metodología Investigativa', credits: 3, tag: 'investigación' },
+      { name: 'Metodología investigativa', credits: 3, tag: 'investigación' },
       { name: 'Cadena de custodia avanzada', credits: 2, tag: 'investigación' },
-      { name: 'Análisis forense digital', credits: 3, tag: 'tecnologia' },
-      { name: 'Ética policial aplicada', credits: 2, tag: 'normativa' }
+      { name: 'Análisis forense digital', credits: 3, tag: 'tecnologia' }
     ]
   },
   {
-    name: 'Técnico Profesional en Convivencia y Seguridad',
-    level: 'Técnico',
-    credits: 60,
+    name: 'Especialización en Seguridad Integral',
+    level: 'Posgrado',
+    type: 'Especialización profesional',
+    credits: 24,
     courses: [
-      { name: 'Convivencia ciudadana', credits: 3, tag: 'comunidad' },
-      { name: 'Gestión de riesgos', credits: 3, tag: 'operativo' },
-      { name: 'Procedimientos policiales', credits: 3, tag: 'operativo' }
+      { name: 'Gestión de riesgos integrales', credits: 3, tag: 'seguridad' },
+      { name: 'Ciberseguridad aplicada', credits: 2, tag: 'tecnologia' },
+      { name: 'Seguridad corporativa', credits: 2, tag: 'gestión' }
+    ]
+  },
+  {
+    name: 'Especialización en Servicio de Policía',
+    level: 'Posgrado',
+    type: 'Especialización profesional',
+    credits: 24,
+    courses: [
+      { name: 'Planeación del servicio', credits: 3, tag: 'gestión' },
+      { name: 'Derecho disciplinario', credits: 2, tag: 'normativa' },
+      { name: 'Innovación en servicio', credits: 2, tag: 'gestión' }
+    ]
+  },
+  {
+    name: 'Maestría en Investigación Criminal',
+    level: 'Posgrado',
+    type: 'Maestría',
+    credits: 48,
+    courses: [
+      { name: 'Metodologías de investigación avanzada', credits: 4, tag: 'investigación' },
+      { name: 'Analítica de inteligencia', credits: 3, tag: 'tecnologia' },
+      { name: 'Ética y derechos humanos', credits: 2, tag: 'ética' }
+    ]
+  },
+  {
+    name: 'Maestría en Seguridad Pública',
+    level: 'Posgrado',
+    type: 'Maestría',
+    credits: 48,
+    courses: [
+      { name: 'Políticas públicas de seguridad', credits: 3, tag: 'gestión' },
+      { name: 'Análisis de riesgo', credits: 3, tag: 'seguridad' },
+      { name: 'Gestión de crisis', credits: 3, tag: 'gestión' }
+    ]
+  },
+  {
+    name: 'Maestría en Ciberseguridad e Informática Forense',
+    level: 'Posgrado',
+    type: 'Maestría',
+    credits: 50,
+    courses: [
+      { name: 'Respuesta a incidentes', credits: 4, tag: 'tecnologia' },
+      { name: 'Forense digital', credits: 3, tag: 'investigación' },
+      { name: 'Gestión de vulnerabilidades', credits: 3, tag: 'seguridad' }
     ]
   }
 ];
@@ -49,47 +237,64 @@ const requests = [
     id: 'SOL-014-2025',
     applicant: 'Myriam Valdés',
     type: 'Externa',
-    origin: 'Tecnólogo en Seguridad Vial',
-    destination: 'Pregrado en Derecho Policial',
-    originCredits: 92,
+    origin: 'Tecnología en Investigación de Accidentes de Tránsito',
+    destination: 'Pregrado en Criminalística',
+    originCredits: 96,
     destinationCredits: 160,
     ageYears: 4,
     courses: [
-      { origin: 'Legislación de tránsito', dest: 'Derecho Administrativo Policial', match: 82, credits: 3, status: 'success' },
-      { origin: 'Investigación de accidentes', dest: 'Investigación Criminal', match: 74, credits: 4, status: 'success' },
-      { origin: 'Criminalística aplicada', dest: 'Investigación Criminal', match: 61, credits: 3, status: 'review' },
-      { origin: 'Primer respondiente', dest: 'Procedimiento Penal', match: 28, credits: 2, status: 'stop' }
+      { origin: 'Reconstrucción de siniestros', dest: 'Procesamiento de escena', match: 82, credits: 4, status: 'success' },
+      { origin: 'Toma de evidencias', dest: 'Documentología forense', match: 74, credits: 3, status: 'success' },
+      { origin: 'Responsabilidad civil y penal', dest: 'Bioética y derechos humanos', match: 61, credits: 3, status: 'review' }
     ]
   },
   {
     id: 'SOL-021-2025',
     applicant: 'Andrés Galeano',
     type: 'Interna',
-    origin: 'Técnico Profesional en Convivencia y Seguridad',
-    destination: 'Tecnólogo en Seguridad Vial',
+    origin: 'Técnico Profesional en Seguridad Vial (presencial)',
+    destination: 'Tecnología en Gestión del Servicio de Policía',
     originCredits: 60,
     destinationCredits: 96,
     ageYears: 2,
     courses: [
-      { origin: 'Convivencia ciudadana', dest: 'Legislación de tránsito', match: 69, credits: 3, status: 'review' },
-      { origin: 'Gestión de riesgos', dest: 'Investigación de accidentes', match: 71, credits: 3, status: 'success' },
-      { origin: 'Procedimientos policiales', dest: 'Primer respondiente', match: 54, credits: 2, status: 'stop' }
+      { origin: 'Legislación de tránsito', dest: 'Derecho policial', match: 69, credits: 3, status: 'review' },
+      { origin: 'Investigación de accidentes', dest: 'Gestión estratégica del servicio', match: 71, credits: 4, status: 'success' },
+      { origin: 'Gestión comunitaria vial', dest: 'Ética y transparencia', match: 54, credits: 2, status: 'stop' }
     ]
   },
   {
     id: 'SOL-033-2025',
     applicant: 'Diana Ortiz',
     type: 'Interna',
-    origin: 'Tecnólogo en Seguridad Vial',
-    destination: 'Especialización en Investigación Criminal',
-    originCredits: 96,
-    destinationCredits: 26,
+    origin: 'Tecnología en Mantenimiento Aeronáutico',
+    destination: 'Especialización en Seguridad Integral',
+    originCredits: 100,
+    destinationCredits: 24,
     ageYears: 5,
     courses: [
-      { origin: 'Investigación de accidentes', dest: 'Metodología Investigativa', match: 88, credits: 3, status: 'success' },
-      { origin: 'Criminalística aplicada', dest: 'Cadena de custodia avanzada', match: 75, credits: 2, status: 'success' },
-      { origin: 'Legislación de tránsito', dest: 'Ética policial aplicada', match: 40, credits: 3, status: 'review' }
+      { origin: 'Calidad y seguridad aeronáutica', dest: 'Gestión de riesgos integrales', match: 88, credits: 3, status: 'success' },
+      { origin: 'Materiales compuestos', dest: 'Ciberseguridad aplicada', match: 45, credits: 3, status: 'review' },
+      { origin: 'Estructuras aeronáuticas', dest: 'Seguridad corporativa', match: 42, credits: 4, status: 'stop' }
     ]
+  }
+];
+
+const carouselSlides = [
+  {
+    title: 'Movilidad interna',
+    body: 'Rutas flexibles desde programas técnicos laborales hacia ciclos tecnológicos y profesionales.',
+    image: 'https://images.unsplash.com/photo-1582719478248-54e9f2af05e0?auto=format&fit=crop&w=900&q=60'
+  },
+  {
+    title: 'Cumplimiento normativo',
+    body: 'Alertas automáticas sobre topes de créditos (50% externos, 70% internos) y vigencia de asignaturas.',
+    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=60'
+  },
+  {
+    title: 'Transparencia DIEPO',
+    body: 'Accesos rápidos a SNIES, PQRS y documentos oficiales para la ciudadanía y la comunidad académica.',
+    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=60'
   }
 ];
 
@@ -107,13 +312,19 @@ const dashboardData = {
   trend: [65, 72, 70, 78]
 };
 
+let activeSlide = 0;
+
+
 document.addEventListener('DOMContentLoaded', () => {
   renderPrograms();
   populateRequests();
   renderDashboard();
+  renderCarousel();
   document.getElementById('filter-level').addEventListener('change', renderPrograms);
   document.getElementById('filter-text').addEventListener('input', renderPrograms);
   document.getElementById('request-select').addEventListener('change', () => analyzeRequest());
+  document.getElementById('carousel-next').addEventListener('click', () => changeSlide(1));
+  document.getElementById('carousel-prev').addEventListener('click', () => changeSlide(-1));
   analyzeRequest();
 });
 
@@ -134,7 +345,7 @@ function renderPrograms() {
           <h4>${program.name}</h4>
           <span class="badge ghost">${program.level}</span>
         </div>
-        <p class="stat-foot">${program.credits} créditos totales · 48h/crédito</p>
+        <p class="program__meta">${program.type} · ${program.credits} créditos totales · 48h/crédito</p>
         <ul class="program__courses">
           ${program.courses.map(c => `<li>${c.name} · ${c.credits} cr.</li>`).join('')}
         </ul>
@@ -230,6 +441,7 @@ function renderConcept(request, totalCredits, percent, limit, alerts) {
 
 function renderDashboard() {
   const cards = document.getElementById('dashboard-cards');
+  cards.innerHTML = '';
   dashboardData.totals.forEach(item => {
     const card = document.createElement('article');
     card.className = 'card';
@@ -242,6 +454,7 @@ function renderDashboard() {
   });
 
   const typeChart = document.getElementById('chart-type');
+  typeChart.innerHTML = '';
   dashboardData.typeDistribution.forEach((item, idx) => {
     const bar = document.createElement('div');
     bar.className = 'bar';
@@ -261,6 +474,7 @@ function renderDashboard() {
   });
 
   const trendChart = document.getElementById('chart-trend');
+  trendChart.innerHTML = '';
   const points = dashboardData.trend;
   points.forEach((value, idx) => {
     const x = 40 + idx * 80;
@@ -286,4 +500,16 @@ function renderDashboard() {
       trendChart.appendChild(line);
     }
   });
+}
+
+function renderCarousel() {
+  const slide = carouselSlides[activeSlide];
+  document.getElementById('carousel-title').textContent = slide.title;
+  document.getElementById('carousel-body').textContent = slide.body;
+  document.getElementById('carousel-image').innerHTML = `<img src="${slide.image}" alt="${slide.title}">`;
+}
+
+function changeSlide(step) {
+  activeSlide = (activeSlide + step + carouselSlides.length) % carouselSlides.length;
+  renderCarousel();
 }
