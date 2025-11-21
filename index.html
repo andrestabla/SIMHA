@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMHA | Prototipo PMV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg/1200px-Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg.png" alt="Escudo Policía Nacional">
+        <div>
+          <div>Escuela Nacional de Policía</div>
+          <small>Dirección de Educación Policial - DIEPO</small>
+        </div>
+      </div>
+      <div class="nav__menu">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#curricular">Oferta académica</a>
+        <a href="#alcance">Escuelas de formación</a>
+        <a href="#transparencia">Transparencia</a>
+        <a href="#noticias">Noticias / convocatorias</a>
+        <a href="login.html" class="btn primary">Ingresar</a>
+      </div>
+    </nav>
+  </header>
+
+  <header class="hero" id="inicio">
+    <div class="hero__content">
+      <p class="eyebrow">Prototipo ejecutable en HTML</p>
+      <h1>SIMHA · Sistema para la Movilidad y Homologación Académica</h1>
+      <p class="lead">Aplicativo orientado a los comités académicos de la DIEPO para agilizar la evaluación de solicitudes, cumplir la normativa colombiana y fortalecer la movilidad formativa del personal policial.</p>
+      <div class="hero__actions">
+        <a href="#solicitudes" class="btn secondary">Simular solicitud</a>
+        <a href="#dashboard" class="btn ghost">Ver indicadores</a>
+        <a href="login.html" class="btn">Acceso comités</a>
+      </div>
+      <div class="pill">Cubre Ley 115, Ley 30, Ley 749, Decreto 1075 y Manual Académico DIEPO 2025</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="carrusel">
+      <div class="carousel">
+        <div class="carousel__image" id="carousel-image"></div>
+        <div class="carousel__content">
+          <h3 id="carousel-title">Movilidad académica DIEPO</h3>
+          <p id="carousel-body">Rotación de mensajes institucionales sobre formación, convocatorias y transparencia.</p>
+          <div class="carousel__controls">
+            <button class="btn" id="carousel-prev">◀ Anterior</button>
+            <button class="btn" id="carousel-next">Siguiente ▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="accesos">
+      <div class="panel__header">
+        <h2>Accesos rápidos</h2>
+        <p>Enlaces institucionales y sistemas integrados: aulas virtuales, SNIES, PQRS y SIEDPOL.</p>
+      </div>
+      <div class="quick-links">
+        <a href="#curricular">Base curricular consolidada</a>
+        <a href="#dashboard">Dashboard de indicadores</a>
+        <a href="#concepto">Conceptos preliminares</a>
+        <a href="#transparencia">Documentos oficiales</a>
+        <a href="login.html">Login de comités</a>
+      </div>
+    </section>
+
+    <section id="objetivo" class="panel">
+      <div class="panel__header">
+        <h2>Objetivo del PMV</h2>
+        <p>Digitalizar y estandarizar la movilidad académica y homologación de créditos en la Policía Nacional, reduciendo tiempos, asegurando coherencia normativa y fomentando rutas de formación flexibles.</p>
+      </div>
+      <div class="grid three">
+        <article class="card highlight">
+          <h3>Agilizar evaluaciones</h3>
+          <p>Automatiza comparaciones de planes de estudio y genera recomendaciones iniciales para que el comité se concentre en la decisión de fondo.</p>
+        </article>
+        <article class="card highlight">
+          <h3>Garantizar cumplimiento</h3>
+          <p>Incluye reglas parametrizables (50% externos, 70% internos, vigencia de cursos, materias no homologables) alineadas con la normatividad.</p>
+        </article>
+        <article class="card highlight">
+          <h3>Impulsar movilidad</h3>
+          <p>Permite progresión por ciclos propedéuticos, centraliza equivalencias y habilita rutas desde técnico hasta posgrado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="perfil" class="panel">
+      <div class="panel__header">
+        <h2>Perfil de usuario · Comité Académico DIEPO</h2>
+        <p>Directivos y docentes responsables de revisar solicitudes de homologación, validar documentación y asegurar la aplicación correcta de la normativa educativa y policial.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Necesidades clave</h3>
+          <ul>
+            <li>Comparar programas y sílabos rápidamente.</li>
+            <li>Ver alertas automáticas sobre límites de créditos y vigencia.</li>
+            <li>Generar conceptos uniformes y trazables.</li>
+            <li>Acceder a referencias normativas en contexto.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Contexto de uso</h3>
+          <p>Revisiones previas a sesiones de comité, deliberación en grupo con acceso a documentos, ajustes manuales a recomendaciones y emisión de conceptos finales respaldados por el sistema.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="alcance" class="panel">
+      <div class="panel__header">
+        <h2>Alcance funcional mínimo</h2>
+        <p>Las cuatro funciones esenciales del PMV se prototipan a continuación.</p>
+      </div>
+      <div class="grid four">
+        <article class="card mini">
+          <h3>Base curricular consolidada</h3>
+          <p>Repositorio unificado de programas, asignaturas, créditos, competencias y contenidos sintéticos.</p>
+        </article>
+        <article class="card mini">
+          <h3>Motor de análisis</h3>
+          <p>Reglas deterministas para sugerir homologaciones, validar porcentajes máximos y vigencia.</p>
+        </article>
+        <article class="card mini">
+          <h3>Concepto preliminar</h3>
+          <p>Documento automático con asignaturas sugeridas, justificaciones y alertas normativas.</p>
+        </article>
+        <article class="card mini">
+          <h3>Dashboard</h3>
+          <p>Indicadores clave de solicitudes, aprobación, créditos homologados y tiempos de respuesta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="curricular" class="panel">
+      <div class="panel__header">
+        <h2>Oferta académica y base curricular</h2>
+        <p>Consulta rápida de programas DIEPO con asignaturas normalizadas (créditos a 48 h, contenidos sintéticos y nivel).</p>
+        <div class="filters">
+          <label>Filtrar por nivel:
+            <select id="filter-level">
+              <option value="todos">Todos</option>
+              <option value="Técnico Laboral">Técnico Laboral</option>
+              <option value="Técnico Profesional">Técnico Profesional</option>
+              <option value="Tecnológico">Tecnológico</option>
+              <option value="Pregrado">Pregrado</option>
+              <option value="Posgrado">Posgrado</option>
+            </select>
+          </label>
+          <label>Buscar por palabra clave:
+            <input id="filter-text" type="search" placeholder="Ej. investigación, movilidad">
+          </label>
+        </div>
+      </div>
+      <div id="program-list" class="program-list"></div>
+    </section>
+
+    <section id="solicitudes" class="panel">
+      <div class="panel__header">
+        <h2>Motor de análisis e inferencia</h2>
+        <p>Selecciona una solicitud de ejemplo para ver la evaluación automática, reglas aplicadas y estimación de créditos homologables.</p>
+        <div class="filters">
+          <label>Solicitud:
+            <select id="request-select"></select>
+          </label>
+          <div class="legend">
+            <span class="badge success"></span> Sugerida &nbsp; <span class="badge review"></span> Revisión &nbsp; <span class="badge stop"></span> No homologable
+          </div>
+        </div>
+      </div>
+      <div class="grid two" id="analysis">
+        <article class="card">
+          <h3>Resultado de análisis</h3>
+          <div id="analysis-results" class="analysis-results"></div>
+        </article>
+        <article class="card">
+          <h3>Alertas y reglas aplicadas</h3>
+          <ul id="rules-list" class="rules"></ul>
+          <div class="totals">
+            <div class="pill" id="total-credits"></div>
+            <div class="pill" id="percent-credits"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="concepto" class="panel">
+      <div class="panel__header">
+        <h2>Generación automática de concepto preliminar</h2>
+        <p>SIMHA redacta un borrador que el comité puede ajustar antes de aprobar el concepto final.</p>
+      </div>
+      <div class="card concept" id="concept-preview">
+        <div class="concept__header">
+          <div>
+            <p class="eyebrow">Borrador</p>
+            <h3 id="concept-title">Seleccione una solicitud para generar concepto</h3>
+          </div>
+          <span class="badge ghost" id="concept-type"></span>
+        </div>
+        <p id="concept-body">El motor de inferencia incluirá asignaturas sugeridas, alertas de vigencia, porcentajes de créditos y fundamentos normativos aplicables.</p>
+        <div class="concept__footer">
+          <p class="normativa"><strong>Normativa de referencia:</strong> Ley 115/1994 Art. 79, Ley 30/1992, Ley 749/2002, Decreto 1075/2015, Ley 1092/2006, Manual Académico DIEPO (Acuerdo 003 de 2024).</p>
+          <button class="btn primary" id="approve-btn" disabled>Listo para comité</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="panel">
+      <div class="panel__header">
+        <h2>Dashboard con indicadores académicos</h2>
+        <p>Seguimiento a movilidad y homologaciones para decisiones estratégicas.</p>
+      </div>
+      <div class="grid four stats" id="dashboard-cards"></div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Distribución de solicitudes por tipo</h3>
+          <div class="chart" id="chart-type"></div>
+        </article>
+        <article class="card">
+          <h3>Tendencia semestral de aprobación</h3>
+          <div class="chart" id="chart-trend"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="flujo" class="panel">
+      <div class="panel__header">
+        <h2>Flujo de uso simulado</h2>
+        <p>Representación paso a paso del proceso del comité académico usando SIMHA.</p>
+      </div>
+      <ol class="timeline">
+        <li><strong>Recepción de solicitud:</strong> Notificación con datos básicos y documentos adjuntos.</li>
+        <li><strong>Análisis automático:</strong> Matching de asignaturas, cálculo de créditos y alertas de vigencia.</li>
+        <li><strong>Deliberación:</strong> Ajustes manuales del comité y registro de observaciones.</li>
+        <li><strong>Generación de concepto:</strong> Documento preliminar con justificaciones y normativa aplicada.</li>
+        <li><strong>Seguimiento:</strong> Indicadores alimentados y posibilidad de crear nuevas equivalencias.</li>
+      </ol>
+    </section>
+
+    <section id="tecnica" class="panel">
+      <div class="panel__header">
+        <h2>Recomendaciones técnicas</h2>
+        <p>Lineamientos propuestos para el desarrollo del PMV y su escalabilidad.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>Arquitectura modular</h3>
+          <p>Separar frontend, lógica de negocio y base de datos; exponer API REST para integraciones y potencial despliegue en intranet/SSO.</p>
+        </article>
+        <article class="card">
+          <h3>Reglas parametrizables</h3>
+          <p>Tablas o panel de administración para porcentajes máximos, vigencia, excepciones y equivalencia de créditos (48 horas).</p>
+        </article>
+        <article class="card">
+          <h3>Seguridad y trazabilidad</h3>
+          <p>Control de accesos por roles, cifrado HTTPS, repositorio de documentos vinculado y bitácora de auditoría inalterable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="transparencia" class="panel">
+      <div class="panel__header">
+        <h2>Transparencia y normativa</h2>
+        <p>Vínculos a resoluciones, reglamentos, SNIES, Mineducación y SIEDPOL para consulta pública.</p>
+      </div>
+      <div class="card">
+        <p>En esta sección se referenciarán PDFs, acuerdos y políticas de privacidad institucionales. Incluye PQRS y mapa de sitio.</p>
+      </div>
+    </section>
+
+    <section id="noticias" class="panel">
+      <div class="panel__header">
+        <h2>Noticias y convocatorias</h2>
+        <p>Información de eventos académicos, inscripción a programas y testimonios de movilidad.</p>
+      </div>
+      <div class="card">
+        <p>Las publicaciones destacadas del portal institucional se mostrarán aquí con vínculos multimedia moderados.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <strong>SIMHA · Prototipo PMV para la Dirección de Educación Policial</strong>
+      <small>Contacto: Calle 26 #52-21, Bogotá D.C. · Tel. (601) 515 97 00 · diepo@policia.gov.co</small>
+      <small>Política de privacidad · Términos de uso · Mapa del sitio · Síguenos en redes institucionales.</small>
+      <small>Datos de muestra con fines demostrativos.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
