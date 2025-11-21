@@ -10,41 +10,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="nav__logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg/1200px-Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg.png" alt="Escudo Policía Nacional">
-        <div>
-          <div>Escuela Nacional de Policía</div>
-          <small>Dirección de Educación Policial - DIEPO</small>
-        </div>
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-card login-card--overlay">
+      <p class="eyebrow">Acceso inicial</p>
+      <h1>Página inicial · Login SIMHA</h1>
+      <p>Use las credenciales visibles para ingresar como administrador del prototipo.</p>
+      <div class="credentials-box">
+        Usuario: <code id="overlay-user">comite@diepo.edu.co</code><br>
+        Contraseña: <code id="overlay-pass">SIMHA2025!</code>
       </div>
-      <div class="nav__menu">
-        <a href="#inicio" class="active">Inicio</a>
-        <a href="#curricular">Oferta académica</a>
-        <a href="#alcance">Escuelas de formación</a>
-        <a href="#transparencia">Transparencia</a>
-        <a href="#noticias">Noticias / convocatorias</a>
-        <a href="login.html" class="btn primary">Ingresar</a>
+      <label for="login-user">Usuario institucional</label>
+      <input id="login-user" type="email" placeholder="usuario@diepo.edu.co" value="comite@diepo.edu.co">
+      <label for="login-pass">Contraseña</label>
+      <input id="login-pass" type="password" placeholder="••••••" value="SIMHA2025!">
+      <div class="login-actions">
+        <button class="btn primary" id="login-btn">Ingresar como administrador</button>
       </div>
-    </nav>
-  </header>
-
-  <header class="hero" id="inicio">
-    <div class="hero__content">
-      <p class="eyebrow">Prototipo ejecutable en HTML</p>
-      <h1>SIMHA · Sistema para la Movilidad y Homologación Académica</h1>
-      <p class="lead">Aplicativo orientado a los comités académicos de la DIEPO para agilizar la evaluación de solicitudes, cumplir la normativa colombiana y fortalecer la movilidad formativa del personal policial.</p>
-      <div class="hero__actions">
-        <a href="#solicitudes" class="btn secondary">Simular solicitud</a>
-        <a href="#dashboard" class="btn ghost">Ver indicadores</a>
-        <a href="login.html" class="btn">Acceso comités</a>
-      </div>
-      <div class="pill">Cubre Ley 115, Ley 30, Ley 749, Decreto 1075 y Manual Académico DIEPO 2025</div>
+      <p id="login-message" class="login-message">La página inicial es el login. Al validar las credenciales se habilita el sistema.</p>
     </div>
-  </header>
+  </div>
 
-  <main>
+  <div id="app">
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg/1200px-Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg.png" alt="Escudo Policía Nacional">
+          <div>
+            <div>Escuela Nacional de Policía</div>
+            <small>Dirección de Educación Policial - DIEPO</small>
+          </div>
+        </div>
+        <div class="nav__menu">
+          <a href="#inicio" class="active">Inicio</a>
+          <a href="#solicitudes">Motor de análisis</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#tecnica">Recomendaciones</a>
+          <span id="admin-pill" class="pill muted hidden">Perfil: Administrador</span>
+        </div>
+      </nav>
+    </header>
+
+    <header class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="eyebrow">Prototipo ejecutable en HTML</p>
+        <h1>SIMHA · Sistema para la Movilidad y Homologación Académica</h1>
+        <p class="lead">Aplicativo orientado a los comités académicos de la DIEPO para agilizar la evaluación de solicitudes, cumplir la normativa colombiana y fortalecer la movilidad formativa del personal policial.</p>
+        <div class="hero__actions">
+          <a href="#solicitudes" class="btn secondary">Simular solicitud</a>
+          <a href="#dashboard" class="btn ghost">Ver indicadores</a>
+        </div>
+        <div class="pill">Cubre Ley 115, Ley 30, Ley 749, Decreto 1075 y Manual Académico DIEPO 2025</div>
+      </div>
+    </header>
+
+    <main>
     <section class="panel" id="carrusel">
       <div class="carousel">
         <div class="carousel__image" id="carousel-image"></div>
@@ -65,11 +84,11 @@
         <p>Enlaces institucionales y sistemas integrados: aulas virtuales, SNIES, PQRS y SIEDPOL.</p>
       </div>
       <div class="quick-links">
-        <a href="#curricular">Base curricular consolidada</a>
+        <a href="#solicitudes">Motor de análisis</a>
         <a href="#dashboard">Dashboard de indicadores</a>
         <a href="#concepto">Conceptos preliminares</a>
-        <a href="#transparencia">Documentos oficiales</a>
-        <a href="login.html">Login de comités</a>
+        <a href="#tecnica">Lineamientos técnicos</a>
+        <a href="#flujo">Flujo simulado</a>
       </div>
     </section>
 
@@ -119,13 +138,9 @@
     <section id="alcance" class="panel">
       <div class="panel__header">
         <h2>Alcance funcional mínimo</h2>
-        <p>Las cuatro funciones esenciales del PMV se prototipan a continuación.</p>
+        <p>Funciones esenciales prototipadas: motor de análisis, concepto preliminar y tablero de indicadores.</p>
       </div>
       <div class="grid four">
-        <article class="card mini">
-          <h3>Base curricular consolidada</h3>
-          <p>Repositorio unificado de programas, asignaturas, créditos, competencias y contenidos sintéticos.</p>
-        </article>
         <article class="card mini">
           <h3>Motor de análisis</h3>
           <p>Reglas deterministas para sugerir homologaciones, validar porcentajes máximos y vigencia.</p>
@@ -138,30 +153,11 @@
           <h3>Dashboard</h3>
           <p>Indicadores clave de solicitudes, aprobación, créditos homologados y tiempos de respuesta.</p>
         </article>
+        <article class="card mini">
+          <h3>Revisión normativa</h3>
+          <p>Referencia a Ley 115, Ley 30, Ley 749, Decreto 1075, Ley 1092 y Manual Académico DIEPO.</p>
+        </article>
       </div>
-    </section>
-
-    <section id="curricular" class="panel">
-      <div class="panel__header">
-        <h2>Oferta académica y base curricular</h2>
-        <p>Consulta rápida de programas DIEPO con asignaturas normalizadas (créditos a 48 h, contenidos sintéticos y nivel).</p>
-        <div class="filters">
-          <label>Filtrar por nivel:
-            <select id="filter-level">
-              <option value="todos">Todos</option>
-              <option value="Técnico Laboral">Técnico Laboral</option>
-              <option value="Técnico Profesional">Técnico Profesional</option>
-              <option value="Tecnológico">Tecnológico</option>
-              <option value="Pregrado">Pregrado</option>
-              <option value="Posgrado">Posgrado</option>
-            </select>
-          </label>
-          <label>Buscar por palabra clave:
-            <input id="filter-text" type="search" placeholder="Ej. investigación, movilidad">
-          </label>
-        </div>
-      </div>
-      <div id="program-list" class="program-list"></div>
     </section>
 
     <section id="solicitudes" class="panel">
@@ -267,26 +263,9 @@
       </div>
     </section>
 
-    <section id="transparencia" class="panel">
-      <div class="panel__header">
-        <h2>Transparencia y normativa</h2>
-        <p>Vínculos a resoluciones, reglamentos, SNIES, Mineducación y SIEDPOL para consulta pública.</p>
-      </div>
-      <div class="card">
-        <p>En esta sección se referenciarán PDFs, acuerdos y políticas de privacidad institucionales. Incluye PQRS y mapa de sitio.</p>
-      </div>
-    </section>
-
-    <section id="noticias" class="panel">
-      <div class="panel__header">
-        <h2>Noticias y convocatorias</h2>
-        <p>Información de eventos académicos, inscripción a programas y testimonios de movilidad.</p>
-      </div>
-      <div class="card">
-        <p>Las publicaciones destacadas del portal institucional se mostrarán aquí con vínculos multimedia moderados.</p>
-      </div>
-    </section>
   </main>
+
+  </div>
 
   <footer class="footer">
     <div class="footer__content">

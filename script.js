@@ -292,8 +292,8 @@ const carouselSlides = [
     image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=60'
   },
   {
-    title: 'Transparencia DIEPO',
-    body: 'Accesos rápidos a SNIES, PQRS y documentos oficiales para la ciudadanía y la comunidad académica.',
+    title: 'Acceso administrativo',
+    body: 'El prototipo inicia en el login y habilita el rol administrador tras validar credenciales visibles.',
     image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=60'
   }
 ];
@@ -314,19 +314,77 @@ const dashboardData = {
 
 let activeSlide = 0;
 
-
 document.addEventListener('DOMContentLoaded', () => {
-  renderPrograms();
-  populateRequests();
-  renderDashboard();
-  renderCarousel();
-  document.getElementById('filter-level').addEventListener('change', renderPrograms);
-  document.getElementById('filter-text').addEventListener('input', renderPrograms);
-  document.getElementById('request-select').addEventListener('change', () => analyzeRequest());
-  document.getElementById('carousel-next').addEventListener('click', () => changeSlide(1));
-  document.getElementById('carousel-prev').addEventListener('click', () => changeSlide(-1));
-  analyzeRequest();
+  setupLogin();
 });
+
+function setupLogin() {
+  const overlay = document.getElementById('login-overlay');
+  const app = document.getElementById('app');
+  const loginBtn = document.getElementById('login-btn');
+  const userInput = document.getElementById('login-user');
+  const passInput = document.getElementById('login-pass');
+  const message = document.getElementById('login-message');
+  const adminPill = document.getElementById('admin-pill');
+
+  if (!overlay || !app) {
+    startApp();
+    return;
+  }
+
+  app.classList.add('hidden');
+
+  const tryLogin = () => {
+    const isValid = userInput.value.trim().toLowerCase() === 'comite@diepo.edu.co' && passInput.value === 'SIMHA2025!';
+    if (isValid) {
+      overlay.classList.add('hidden');
+      app.classList.remove('hidden');
+      adminPill?.classList.remove('hidden');
+      if (message) {
+        message.textContent = 'Acceso autorizado. Perfil administrador activo.';
+        message.classList.remove('error');
+      }
+      startApp();
+    } else if (message) {
+      message.textContent = 'Credenciales inválidas. Use comite@diepo.edu.co / SIMHA2025!';
+      message.classList.add('error');
+    }
+  };
+
+  loginBtn?.addEventListener('click', tryLogin);
+  passInput?.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter') {
+      tryLogin();
+    }
+  });
+}
+
+function startApp() {
+  const filterLevel = document.getElementById('filter-level');
+  const programList = document.getElementById('program-list');
+  if (filterLevel && programList) {
+    renderPrograms();
+    filterLevel.addEventListener('change', renderPrograms);
+    document.getElementById('filter-text')?.addEventListener('input', renderPrograms);
+  }
+
+  const requestSelect = document.getElementById('request-select');
+  if (requestSelect) {
+    populateRequests();
+    requestSelect.addEventListener('change', () => analyzeRequest());
+    analyzeRequest();
+  }
+
+  if (document.getElementById('dashboard-cards')) {
+    renderDashboard();
+  }
+
+  if (document.getElementById('carousel-title')) {
+    renderCarousel();
+    document.getElementById('carousel-next')?.addEventListener('click', () => changeSlide(1));
+    document.getElementById('carousel-prev')?.addEventListener('click', () => changeSlide(-1));
+  }
+}
 
 function renderPrograms() {
   const level = document.getElementById('filter-level').value;
