@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIMHA | Prototipo PMV</title>
+  <title>SIMHA | PMV Prototype</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,21 @@
 <body>
   <div id="login-overlay" class="login-overlay">
     <div class="login-card login-card--overlay">
-      <p class="eyebrow">Acceso inicial</p>
-      <h1>Página inicial · Login SIMHA</h1>
-      <p>Use las credenciales visibles para ingresar como administrador del prototipo.</p>
+      <p class="eyebrow">Initial access</p>
+      <h1>Landing page · SIMHA Login</h1>
+      <p>Use the visible credentials to enter as administrator for this prototype.</p>
       <div class="credentials-box">
-        Usuario: <code id="overlay-user">comite@diepo.edu.co</code><br>
-        Contraseña: <code id="overlay-pass">SIMHA2025!</code>
+        User: <code id="overlay-user">comite@diepo.edu.co</code><br>
+        Password: <code id="overlay-pass">SIMHA2025!</code>
       </div>
-      <label for="login-user">Usuario institucional</label>
-      <input id="login-user" type="email" placeholder="usuario@diepo.edu.co" value="comite@diepo.edu.co">
-      <label for="login-pass">Contraseña</label>
+      <label for="login-user">Institutional user</label>
+      <input id="login-user" type="email" placeholder="user@diepo.edu.co" value="comite@diepo.edu.co">
+      <label for="login-pass">Password</label>
       <input id="login-pass" type="password" placeholder="••••••" value="SIMHA2025!">
       <div class="login-actions">
-        <button class="btn primary" id="login-btn">Ingresar como administrador</button>
+        <button class="btn primary" id="login-btn">Sign in as administrator</button>
       </div>
-      <p id="login-message" class="login-message">La página inicial es el login. Al validar las credenciales se habilita el sistema.</p>
+      <p id="login-message" class="login-message">The landing page is the login. Once credentials are validated the system unlocks.</p>
     </div>
   </div>
 
@@ -36,30 +36,30 @@
         <div class="nav__logo">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg/1200px-Escudo_de_la_Polic%C3%ADa_Nacional_de_Colombia.svg.png" alt="Escudo Policía Nacional">
           <div>
-            <div>Escuela Nacional de Policía</div>
-            <small>Dirección de Educación Policial - DIEPO</small>
+            <div>National Police School</div>
+            <small>Police Education Directorate - DIEPO</small>
           </div>
         </div>
         <div class="nav__menu">
-          <a href="#inicio" class="active">Inicio</a>
-          <a href="#solicitudes">Motor de análisis</a>
+          <a href="#inicio" class="active">Home</a>
+          <a href="#solicitudes">Analysis engine</a>
           <a href="#dashboard">Dashboard</a>
-          <a href="#tecnica">Recomendaciones</a>
-          <span id="admin-pill" class="pill muted hidden">Perfil: Administrador</span>
+          <a href="#tecnica">Guidelines</a>
+          <span id="admin-pill" class="pill muted hidden">Role: Administrator</span>
         </div>
       </nav>
     </header>
 
     <header class="hero" id="inicio">
       <div class="hero__content">
-        <p class="eyebrow">Prototipo ejecutable en HTML</p>
-        <h1>SIMHA · Sistema para la Movilidad y Homologación Académica</h1>
-        <p class="lead">Aplicativo orientado a los comités académicos de la DIEPO para agilizar la evaluación de solicitudes, cumplir la normativa colombiana y fortalecer la movilidad formativa del personal policial.</p>
+        <p class="eyebrow">Executable HTML prototype</p>
+        <h1>SIMHA · Academic Mobility and Homologation System</h1>
+        <p class="lead">Application tailored for DIEPO academic committees to speed up request evaluation, ensure compliance with Colombian regulations, and strengthen educational mobility for police personnel.</p>
         <div class="hero__actions">
-          <a href="#solicitudes" class="btn secondary">Simular solicitud</a>
-          <a href="#dashboard" class="btn ghost">Ver indicadores</a>
+          <a href="#solicitudes" class="btn secondary">Simulate request</a>
+          <a href="#dashboard" class="btn ghost">View indicators</a>
         </div>
-        <div class="pill">Cubre Ley 115, Ley 30, Ley 749, Decreto 1075 y Manual Académico DIEPO 2025</div>
+        <div class="pill">Covers Law 115, Law 30, Law 749, Decree 1075 and DIEPO Academic Manual 2025</div>
       </div>
     </header>
 
@@ -68,11 +68,11 @@
       <div class="carousel">
         <div class="carousel__image" id="carousel-image"></div>
         <div class="carousel__content">
-          <h3 id="carousel-title">Movilidad académica DIEPO</h3>
-          <p id="carousel-body">Rotación de mensajes institucionales sobre formación, convocatorias y transparencia.</p>
+          <h3 id="carousel-title">DIEPO academic mobility</h3>
+          <p id="carousel-body">Rotating institutional messages on training, calls for applications, and transparency.</p>
           <div class="carousel__controls">
-            <button class="btn" id="carousel-prev">◀ Anterior</button>
-            <button class="btn" id="carousel-next">Siguiente ▶</button>
+            <button class="btn" id="carousel-prev">◀ Previous</button>
+            <button class="btn" id="carousel-next">Next ▶</button>
           </div>
         </div>
       </div>
@@ -80,106 +80,106 @@
 
     <section class="panel" id="accesos">
       <div class="panel__header">
-        <h2>Accesos rápidos</h2>
-        <p>Enlaces institucionales y sistemas integrados: aulas virtuales, SNIES, PQRS y SIEDPOL.</p>
+        <h2>Quick links</h2>
+        <p>Institutional links and integrated systems: virtual classrooms, SNIES, PQRS, and SIEDPOL.</p>
       </div>
       <div class="quick-links">
-        <a href="#solicitudes">Motor de análisis</a>
-        <a href="#dashboard">Dashboard de indicadores</a>
-        <a href="#concepto">Conceptos preliminares</a>
-        <a href="#tecnica">Lineamientos técnicos</a>
-        <a href="#flujo">Flujo simulado</a>
+        <a href="#solicitudes">Analysis engine</a>
+        <a href="#dashboard">Indicator dashboard</a>
+        <a href="#concepto">Preliminary concepts</a>
+        <a href="#tecnica">Technical guidelines</a>
+        <a href="#flujo">Simulated flow</a>
       </div>
     </section>
 
     <section id="objetivo" class="panel">
       <div class="panel__header">
-        <h2>Objetivo del PMV</h2>
-        <p>Digitalizar y estandarizar la movilidad académica y homologación de créditos en la Policía Nacional, reduciendo tiempos, asegurando coherencia normativa y fomentando rutas de formación flexibles.</p>
+        <h2>MVP objective</h2>
+        <p>Digitize and standardize academic mobility and credit homologation in the National Police, reducing processing time, ensuring regulatory consistency, and fostering flexible learning paths.</p>
       </div>
       <div class="grid three">
         <article class="card highlight">
-          <h3>Agilizar evaluaciones</h3>
-          <p>Automatiza comparaciones de planes de estudio y genera recomendaciones iniciales para que el comité se concentre en la decisión de fondo.</p>
+          <h3>Speed up evaluations</h3>
+          <p>Automates curriculum comparisons and generates initial recommendations so the committee can focus on the final decision.</p>
         </article>
         <article class="card highlight">
-          <h3>Garantizar cumplimiento</h3>
-          <p>Incluye reglas parametrizables (50% externos, 70% internos, vigencia de cursos, materias no homologables) alineadas con la normatividad.</p>
+          <h3>Ensure compliance</h3>
+          <p>Includes configurable rules (50% external, 70% internal, course validity, non-homologable subjects) aligned with regulation.</p>
         </article>
         <article class="card highlight">
-          <h3>Impulsar movilidad</h3>
-          <p>Permite progresión por ciclos propedéuticos, centraliza equivalencias y habilita rutas desde técnico hasta posgrado.</p>
+          <h3>Promote mobility</h3>
+          <p>Enables progression through propedeutic cycles, centralizes equivalences, and supports pathways from technical level to graduate studies.</p>
         </article>
       </div>
     </section>
 
     <section id="perfil" class="panel">
       <div class="panel__header">
-        <h2>Perfil de usuario · Comité Académico DIEPO</h2>
-        <p>Directivos y docentes responsables de revisar solicitudes de homologación, validar documentación y asegurar la aplicación correcta de la normativa educativa y policial.</p>
+        <h2>User profile · DIEPO Academic Committee</h2>
+        <p>Leaders and faculty members responsible for reviewing homologation requests, validating documentation, and ensuring proper application of educational and police regulations.</p>
       </div>
       <div class="grid two">
         <article class="card">
-          <h3>Necesidades clave</h3>
+          <h3>Key needs</h3>
           <ul>
-            <li>Comparar programas y sílabos rápidamente.</li>
-            <li>Ver alertas automáticas sobre límites de créditos y vigencia.</li>
-            <li>Generar conceptos uniformes y trazables.</li>
-            <li>Acceder a referencias normativas en contexto.</li>
+            <li>Compare programs and syllabi quickly.</li>
+            <li>See automatic alerts on credit limits and course validity.</li>
+            <li>Generate uniform, traceable concepts.</li>
+            <li>Access regulatory references in context.</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Contexto de uso</h3>
-          <p>Revisiones previas a sesiones de comité, deliberación en grupo con acceso a documentos, ajustes manuales a recomendaciones y emisión de conceptos finales respaldados por el sistema.</p>
+          <h3>Usage context</h3>
+          <p>Pre-session reviews, group deliberation with document access, manual adjustments to recommendations, and issuance of final concepts supported by the system.</p>
         </article>
       </div>
     </section>
 
     <section id="alcance" class="panel">
       <div class="panel__header">
-        <h2>Alcance funcional mínimo</h2>
-        <p>Funciones esenciales prototipadas: motor de análisis, concepto preliminar y tablero de indicadores.</p>
+        <h2>Minimum functional scope</h2>
+        <p>Essential prototyped functions: analysis engine, preliminary concept, and indicator dashboard.</p>
       </div>
       <div class="grid four">
         <article class="card mini">
-          <h3>Motor de análisis</h3>
-          <p>Reglas deterministas para sugerir homologaciones, validar porcentajes máximos y vigencia.</p>
+          <h3>Analysis engine</h3>
+          <p>Deterministic rules to suggest homologations, validate maximum percentages, and check validity.</p>
         </article>
         <article class="card mini">
-          <h3>Concepto preliminar</h3>
-          <p>Documento automático con asignaturas sugeridas, justificaciones y alertas normativas.</p>
+          <h3>Preliminary concept</h3>
+          <p>Automatic draft with suggested courses, justifications, and regulatory alerts.</p>
         </article>
         <article class="card mini">
           <h3>Dashboard</h3>
-          <p>Indicadores clave de solicitudes, aprobación, créditos homologados y tiempos de respuesta.</p>
+          <p>Key indicators for requests, approval, homologated credits, and response times.</p>
         </article>
         <article class="card mini">
-          <h3>Revisión normativa</h3>
-          <p>Referencia a Ley 115, Ley 30, Ley 749, Decreto 1075, Ley 1092 y Manual Académico DIEPO.</p>
+          <h3>Regulatory review</h3>
+          <p>Reference to Law 115, Law 30, Law 749, Decree 1075, Law 1092, and DIEPO Academic Manual.</p>
         </article>
       </div>
     </section>
 
     <section id="solicitudes" class="panel">
       <div class="panel__header">
-        <h2>Motor de análisis e inferencia</h2>
-        <p>Selecciona una solicitud de ejemplo para ver la evaluación automática, reglas aplicadas y estimación de créditos homologables.</p>
+        <h2>Analysis and inference engine</h2>
+        <p>Select a sample request to view automatic evaluation, applied rules, and estimated homologable credits.</p>
         <div class="filters">
-          <label>Solicitud:
+          <label>Request:
             <select id="request-select"></select>
           </label>
           <div class="legend">
-            <span class="badge success"></span> Sugerida &nbsp; <span class="badge review"></span> Revisión &nbsp; <span class="badge stop"></span> No homologable
+            <span class="badge success"></span> Suggested &nbsp; <span class="badge review"></span> Review &nbsp; <span class="badge stop"></span> Not eligible
           </div>
         </div>
       </div>
       <div class="grid two" id="analysis">
         <article class="card">
-          <h3>Resultado de análisis</h3>
+          <h3>Analysis result</h3>
           <div id="analysis-results" class="analysis-results"></div>
         </article>
         <article class="card">
-          <h3>Alertas y reglas aplicadas</h3>
+          <h3>Alerts and applied rules</h3>
           <ul id="rules-list" class="rules"></ul>
           <div class="totals">
             <div class="pill" id="total-credits"></div>
@@ -191,38 +191,38 @@
 
     <section id="concepto" class="panel">
       <div class="panel__header">
-        <h2>Generación automática de concepto preliminar</h2>
-        <p>SIMHA redacta un borrador que el comité puede ajustar antes de aprobar el concepto final.</p>
+        <h2>Automatic generation of preliminary concept</h2>
+        <p>SIMHA drafts a document that the committee can adjust before approving the final concept.</p>
       </div>
       <div class="card concept" id="concept-preview">
         <div class="concept__header">
           <div>
-            <p class="eyebrow">Borrador</p>
-            <h3 id="concept-title">Seleccione una solicitud para generar concepto</h3>
+            <p class="eyebrow">Draft</p>
+            <h3 id="concept-title">Select a request to generate concept</h3>
           </div>
           <span class="badge ghost" id="concept-type"></span>
         </div>
-        <p id="concept-body">El motor de inferencia incluirá asignaturas sugeridas, alertas de vigencia, porcentajes de créditos y fundamentos normativos aplicables.</p>
+        <p id="concept-body">The inference engine will include suggested courses, validity alerts, credit percentages, and applicable regulatory basis.</p>
         <div class="concept__footer">
-          <p class="normativa"><strong>Normativa de referencia:</strong> Ley 115/1994 Art. 79, Ley 30/1992, Ley 749/2002, Decreto 1075/2015, Ley 1092/2006, Manual Académico DIEPO (Acuerdo 003 de 2024).</p>
-          <button class="btn primary" id="approve-btn" disabled>Listo para comité</button>
+          <p class="normativa"><strong>Reference framework:</strong> Law 115/1994 Art. 79, Law 30/1992, Law 749/2002, Decree 1075/2015, Law 1092/2006, DIEPO Academic Manual (Agreement 003 of 2024).</p>
+          <button class="btn primary" id="approve-btn" disabled>Ready for committee</button>
         </div>
       </div>
     </section>
 
     <section id="dashboard" class="panel">
       <div class="panel__header">
-        <h2>Dashboard con indicadores académicos</h2>
-        <p>Seguimiento a movilidad y homologaciones para decisiones estratégicas.</p>
+        <h2>Dashboard with academic indicators</h2>
+        <p>Monitor mobility and homologations for strategic decisions.</p>
       </div>
       <div class="grid four stats" id="dashboard-cards"></div>
       <div class="grid two">
         <article class="card">
-          <h3>Distribución de solicitudes por tipo</h3>
+          <h3>Requests by type</h3>
           <div class="chart" id="chart-type"></div>
         </article>
         <article class="card">
-          <h3>Tendencia semestral de aprobación</h3>
+          <h3>Semester approval trend</h3>
           <div class="chart" id="chart-trend"></div>
         </article>
       </div>
@@ -230,35 +230,35 @@
 
     <section id="flujo" class="panel">
       <div class="panel__header">
-        <h2>Flujo de uso simulado</h2>
-        <p>Representación paso a paso del proceso del comité académico usando SIMHA.</p>
+        <h2>Simulated use flow</h2>
+        <p>Step-by-step representation of the academic committee process using SIMHA.</p>
       </div>
       <ol class="timeline">
-        <li><strong>Recepción de solicitud:</strong> Notificación con datos básicos y documentos adjuntos.</li>
-        <li><strong>Análisis automático:</strong> Matching de asignaturas, cálculo de créditos y alertas de vigencia.</li>
-        <li><strong>Deliberación:</strong> Ajustes manuales del comité y registro de observaciones.</li>
-        <li><strong>Generación de concepto:</strong> Documento preliminar con justificaciones y normativa aplicada.</li>
-        <li><strong>Seguimiento:</strong> Indicadores alimentados y posibilidad de crear nuevas equivalencias.</li>
+        <li><strong>Request reception:</strong> Notification with basic data and attached documents.</li>
+        <li><strong>Automatic analysis:</strong> Course matching, credit calculation, and validity alerts.</li>
+        <li><strong>Deliberation:</strong> Committee manual adjustments and observation logging.</li>
+        <li><strong>Concept generation:</strong> Preliminary document with justifications and applied regulation.</li>
+        <li><strong>Follow-up:</strong> Indicators updated and ability to create new equivalences.</li>
       </ol>
     </section>
 
     <section id="tecnica" class="panel">
       <div class="panel__header">
-        <h2>Recomendaciones técnicas</h2>
-        <p>Lineamientos propuestos para el desarrollo del PMV y su escalabilidad.</p>
+        <h2>Technical recommendations</h2>
+        <p>Guidelines proposed for PMV development and scalability.</p>
       </div>
       <div class="grid three">
         <article class="card">
-          <h3>Arquitectura modular</h3>
-          <p>Separar frontend, lógica de negocio y base de datos; exponer API REST para integraciones y potencial despliegue en intranet/SSO.</p>
+          <h3>Modular architecture</h3>
+          <p>Separate frontend, business logic, and database; expose REST API for integrations and potential intranet/SSO deployment.</p>
         </article>
         <article class="card">
-          <h3>Reglas parametrizables</h3>
-          <p>Tablas o panel de administración para porcentajes máximos, vigencia, excepciones y equivalencia de créditos (48 horas).</p>
+          <h3>Configurable rules</h3>
+          <p>Admin tables or panel for maximum percentages, validity, exceptions, and credit equivalence (48 hours).</p>
         </article>
         <article class="card">
-          <h3>Seguridad y trazabilidad</h3>
-          <p>Control de accesos por roles, cifrado HTTPS, repositorio de documentos vinculado y bitácora de auditoría inalterable.</p>
+          <h3>Security and traceability</h3>
+          <p>Role-based access control, HTTPS encryption, linked document repository, and immutable audit log.</p>
         </article>
       </div>
     </section>
@@ -269,10 +269,10 @@
 
   <footer class="footer">
     <div class="footer__content">
-      <strong>SIMHA · Prototipo PMV para la Dirección de Educación Policial</strong>
-      <small>Contacto: Calle 26 #52-21, Bogotá D.C. · Tel. (601) 515 97 00 · diepo@policia.gov.co</small>
-      <small>Política de privacidad · Términos de uso · Mapa del sitio · Síguenos en redes institucionales.</small>
-      <small>Datos de muestra con fines demostrativos.</small>
+      <strong>SIMHA · PMV Prototype for the Police Education Directorate</strong>
+      <small>Contact: Calle 26 #52-21, Bogotá D.C. · Tel. (601) 515 97 00 · diepo@policia.gov.co</small>
+      <small>Privacy policy · Terms of use · Site map · Follow us on institutional networks.</small>
+      <small>Sample data for demonstration purposes.</small>
     </div>
   </footer>
 

@@ -1,9 +1,9 @@
 const programs = [
   {
     name: 'Técnico Laboral en Guía Canino para la Detección de Explosivos',
-    level: 'Técnico Laboral',
+    level: 'Technical Labor',
     credits: 48,
-    type: 'Certificación de aptitud ocupacional',
+    type: 'Occupational aptitude certificate',
     courses: [
       { name: 'Ciencias del olfato aplicado', credits: 3, tag: 'operativo' },
       { name: 'Seguridad en manejo de explosivos', credits: 4, tag: 'seguridad' },
@@ -12,9 +12,9 @@ const programs = [
   },
   {
     name: 'Técnico Laboral por Competencias en Abastecimiento Aeronáutico',
-    level: 'Técnico Laboral',
+    level: 'Technical Labor',
     credits: 50,
-    type: 'Certificación de aptitud ocupacional',
+    type: 'Occupational aptitude certificate',
     courses: [
       { name: 'Logística aeroportuaria', credits: 3, tag: 'logística' },
       { name: 'Cadena de suministro aeronáutica', credits: 3, tag: 'gestión' },
@@ -23,9 +23,9 @@ const programs = [
   },
   {
     name: 'Técnico Laboral por Competencias en Mantenimiento Aeronáutico',
-    level: 'Técnico Laboral',
+    level: 'Technical Labor',
     credits: 52,
-    type: 'Certificación de aptitud ocupacional',
+    type: 'Occupational aptitude certificate',
     courses: [
       { name: 'Motores y sistemas de aeronaves', credits: 4, tag: 'mantenimiento' },
       { name: 'Normativa aeronáutica', credits: 3, tag: 'normativa' },
@@ -34,9 +34,9 @@ const programs = [
   },
   {
     name: 'Técnico Profesional en Seguridad Vial (presencial)',
-    level: 'Técnico Profesional',
+    level: 'Professional Technician',
     credits: 60,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Legislación de tránsito', credits: 3, tag: 'normativa' },
       { name: 'Investigación de accidentes', credits: 4, tag: 'investigación' },
@@ -45,9 +45,9 @@ const programs = [
   },
   {
     name: 'Técnico Profesional en Seguridad Vial (a distancia)',
-    level: 'Técnico Profesional',
+    level: 'Professional Technician',
     credits: 60,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Normatividad de tránsito', credits: 3, tag: 'normativa' },
       { name: 'Estadística aplicada a siniestralidad', credits: 3, tag: 'investigación' },
@@ -56,9 +56,9 @@ const programs = [
   },
   {
     name: 'Técnico Profesional en Inteligencia y Contrainteligencia Policial',
-    level: 'Técnico Profesional',
+    level: 'Professional Technician',
     credits: 64,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Fundamentos de inteligencia', credits: 3, tag: 'investigación' },
       { name: 'Análisis de señales', credits: 3, tag: 'tecnologia' },
@@ -67,9 +67,9 @@ const programs = [
   },
   {
     name: 'Técnico Profesional en Investigación Criminal (Policía Judicial)',
-    level: 'Técnico Profesional',
+    level: 'Professional Technician',
     credits: 64,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Cadena de custodia', credits: 3, tag: 'investigación' },
       { name: 'Balística forense', credits: 3, tag: 'investigación' },
@@ -78,9 +78,9 @@ const programs = [
   },
   {
     name: 'Tecnología en Gestión del Servicio de Policía',
-    level: 'Tecnológico',
+    level: 'Technological',
     credits: 96,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Gestión estratégica del servicio', credits: 3, tag: 'gestión' },
       { name: 'Derecho policial', credits: 3, tag: 'normativa' },
@@ -89,9 +89,9 @@ const programs = [
   },
   {
     name: 'Tecnología en Mantenimiento Aeronáutico',
-    level: 'Tecnológico',
+    level: 'Technological',
     credits: 100,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Estructuras aeronáuticas', credits: 4, tag: 'mantenimiento' },
       { name: 'Materiales compuestos', credits: 3, tag: 'tecnologia' },
@@ -100,9 +100,9 @@ const programs = [
   },
   {
     name: 'Tecnología en Investigación de Accidentes de Tránsito',
-    level: 'Tecnológico',
+    level: 'Technological',
     credits: 96,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Reconstrucción de siniestros', credits: 4, tag: 'investigación' },
       { name: 'Toma de evidencias', credits: 3, tag: 'investigación' },
@@ -111,9 +111,9 @@ const programs = [
   },
   {
     name: 'Pregrado en Criminalística',
-    level: 'Pregrado',
+    level: 'Undergraduate',
     credits: 160,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Procesamiento de escena', credits: 4, tag: 'investigación' },
       { name: 'Documentología forense', credits: 3, tag: 'investigación' },
@@ -122,9 +122,9 @@ const programs = [
   },
   {
     name: 'Administración Policial',
-    level: 'Pregrado',
+    level: 'Undergraduate',
     credits: 160,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Planeación estratégica', credits: 3, tag: 'gestión' },
       { name: 'Finanzas públicas', credits: 3, tag: 'gestión' },
@@ -133,9 +133,9 @@ const programs = [
   },
   {
     name: 'Licenciatura en Educación Comunitaria en Derechos Humanos',
-    level: 'Pregrado',
+    level: 'Undergraduate',
     credits: 150,
-    type: 'Educación superior',
+    type: 'Higher education',
     courses: [
       { name: 'Pedagogía comunitaria', credits: 3, tag: 'comunidad' },
       { name: 'Derechos humanos', credits: 3, tag: 'derecho' },
@@ -144,8 +144,8 @@ const programs = [
   },
   {
     name: 'Especialización en Poligrafía',
-    level: 'Posgrado',
-    type: 'Especialización técnica profesional',
+    level: 'Graduate',
+    type: 'Technical professional specialization',
     credits: 28,
     courses: [
       { name: 'Fundamentos de poligrafía', credits: 3, tag: 'investigación' },
@@ -155,8 +155,8 @@ const programs = [
   },
   {
     name: 'Especialización en Enfermería Canina',
-    level: 'Posgrado',
-    type: 'Especialización técnica profesional',
+    level: 'Graduate',
+    type: 'Technical professional specialization',
     credits: 26,
     courses: [
       { name: 'Farmacología aplicada canina', credits: 3, tag: 'salud' },
@@ -166,8 +166,8 @@ const programs = [
   },
   {
     name: 'Especialización en Investigación Criminal',
-    level: 'Posgrado',
-    type: 'Especialización profesional',
+    level: 'Graduate',
+    type: 'Professional specialization',
     credits: 26,
     courses: [
       { name: 'Metodología investigativa', credits: 3, tag: 'investigación' },
@@ -177,8 +177,8 @@ const programs = [
   },
   {
     name: 'Especialización en Seguridad Integral',
-    level: 'Posgrado',
-    type: 'Especialización profesional',
+    level: 'Graduate',
+    type: 'Professional specialization',
     credits: 24,
     courses: [
       { name: 'Gestión de riesgos integrales', credits: 3, tag: 'seguridad' },
@@ -188,8 +188,8 @@ const programs = [
   },
   {
     name: 'Especialización en Servicio de Policía',
-    level: 'Posgrado',
-    type: 'Especialización profesional',
+    level: 'Graduate',
+    type: 'Professional specialization',
     credits: 24,
     courses: [
       { name: 'Planeación del servicio', credits: 3, tag: 'gestión' },
@@ -199,8 +199,8 @@ const programs = [
   },
   {
     name: 'Maestría en Investigación Criminal',
-    level: 'Posgrado',
-    type: 'Maestría',
+    level: 'Graduate',
+    type: 'Master',
     credits: 48,
     courses: [
       { name: 'Metodologías de investigación avanzada', credits: 4, tag: 'investigación' },
@@ -210,8 +210,8 @@ const programs = [
   },
   {
     name: 'Maestría en Seguridad Pública',
-    level: 'Posgrado',
-    type: 'Maestría',
+    level: 'Graduate',
+    type: 'Master',
     credits: 48,
     courses: [
       { name: 'Políticas públicas de seguridad', credits: 3, tag: 'gestión' },
@@ -221,8 +221,8 @@ const programs = [
   },
   {
     name: 'Maestría en Ciberseguridad e Informática Forense',
-    level: 'Posgrado',
-    type: 'Maestría',
+    level: 'Graduate',
+    type: 'Master',
     credits: 50,
     courses: [
       { name: 'Respuesta a incidentes', credits: 4, tag: 'tecnologia' },
@@ -236,7 +236,7 @@ const requests = [
   {
     id: 'SOL-014-2025',
     applicant: 'Myriam Valdés',
-    type: 'Externa',
+    type: 'External',
     origin: 'Tecnología en Investigación de Accidentes de Tránsito',
     destination: 'Pregrado en Criminalística',
     originCredits: 96,
@@ -251,7 +251,7 @@ const requests = [
   {
     id: 'SOL-021-2025',
     applicant: 'Andrés Galeano',
-    type: 'Interna',
+    type: 'Internal',
     origin: 'Técnico Profesional en Seguridad Vial (presencial)',
     destination: 'Tecnología en Gestión del Servicio de Policía',
     originCredits: 60,
@@ -266,7 +266,7 @@ const requests = [
   {
     id: 'SOL-033-2025',
     applicant: 'Diana Ortiz',
-    type: 'Interna',
+    type: 'Internal',
     origin: 'Tecnología en Mantenimiento Aeronáutico',
     destination: 'Especialización en Seguridad Integral',
     originCredits: 100,
@@ -282,32 +282,32 @@ const requests = [
 
 const carouselSlides = [
   {
-    title: 'Movilidad interna',
-    body: 'Rutas flexibles desde programas técnicos laborales hacia ciclos tecnológicos y profesionales.',
+    title: 'Internal mobility',
+    body: 'Flexible routes from technical labor programs toward technological and professional cycles.',
     image: 'https://images.unsplash.com/photo-1582719478248-54e9f2af05e0?auto=format&fit=crop&w=900&q=60'
   },
   {
-    title: 'Cumplimiento normativo',
-    body: 'Alertas automáticas sobre topes de créditos (50% externos, 70% internos) y vigencia de asignaturas.',
+    title: 'Regulatory compliance',
+    body: 'Automatic alerts on credit caps (50% external, 70% internal) and course validity windows.',
     image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=60'
   },
   {
-    title: 'Acceso administrativo',
-    body: 'El prototipo inicia en el login y habilita el rol administrador tras validar credenciales visibles.',
+    title: 'Administrative access',
+    body: 'The prototype starts at login and enables the administrator role after validating visible credentials.',
     image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=60'
   }
 ];
 
 const dashboardData = {
   totals: [
-    { title: 'Solicitudes procesadas', value: 124, foot: '+12% vs. semestre anterior' },
-    { title: 'Tasa de aprobación', value: '78%', foot: 'Promedio interno + externo' },
-    { title: 'Créditos homologados', value: '1.240', foot: 'Equivale al 62% promedio interno' },
-    { title: 'Tiempo de respuesta', value: '6.2 días', foot: 'Promedio radicación a concepto' }
+    { title: 'Processed requests', value: 124, foot: '+12% vs. prior semester' },
+    { title: 'Approval rate', value: '78%', foot: 'Internal + external average' },
+    { title: 'Homologated credits', value: '1,240', foot: 'Equivalent to 62% internal avg.' },
+    { title: 'Response time', value: '6.2 days', foot: 'Average from filing to concept' }
   ],
   typeDistribution: [
-    { label: 'Internas', percent: 65 },
-    { label: 'Externas', percent: 35 }
+    { label: 'Internal', percent: 65 },
+    { label: 'External', percent: 35 }
   ],
   trend: [65, 72, 70, 78]
 };
@@ -341,12 +341,12 @@ function setupLogin() {
       app.classList.remove('hidden');
       adminPill?.classList.remove('hidden');
       if (message) {
-        message.textContent = 'Acceso autorizado. Perfil administrador activo.';
+        message.textContent = 'Access granted. Administrator profile active.';
         message.classList.remove('error');
       }
       startApp();
     } else if (message) {
-      message.textContent = 'Credenciales inválidas. Use comite@diepo.edu.co / SIMHA2025!';
+      message.textContent = 'Invalid credentials. Use comite@diepo.edu.co / SIMHA2025!';
       message.classList.add('error');
     }
   };
@@ -393,7 +393,7 @@ function renderPrograms() {
   container.innerHTML = '';
 
   programs
-    .filter(p => level === 'todos' || p.level === level)
+    .filter(p => level === 'all' || p.level === level)
     .filter(p => p.name.toLowerCase().includes(text) || p.courses.some(c => c.name.toLowerCase().includes(text) || c.tag.includes(text)))
     .forEach(program => {
       const card = document.createElement('article');
@@ -403,7 +403,7 @@ function renderPrograms() {
           <h4>${program.name}</h4>
           <span class="badge ghost">${program.level}</span>
         </div>
-        <p class="program__meta">${program.type} · ${program.credits} créditos totales · 48h/crédito</p>
+        <p class="program__meta">${program.type} · ${program.credits} total credits · 48h/credit</p>
         <ul class="program__courses">
           ${program.courses.map(c => `<li>${c.name} · ${c.credits} cr.</li>`).join('')}
         </ul>
@@ -424,11 +424,11 @@ function analyzeRequest() {
   const rulesList = document.getElementById('rules-list');
   const totalCredits = request.courses.filter(c => c.status !== 'stop').reduce((sum, c) => sum + c.credits, 0);
   const percent = Math.round((totalCredits / request.destinationCredits) * 100);
-  const limit = request.type === 'Externa' ? 50 : 70;
+  const limit = request.type === 'External' ? 50 : 70;
   const rules = [
-    `Tope máximo de homologación ${request.type.toLowerCase()}: ${limit}% (Manual Académico DIEPO)`,
-    'Verificación de vigencia: asignaturas >5 años requieren revisión especial',
-    'Bloqueo de materias operativas/no homologables según reglamento interno'
+    `Maximum homologation cap for ${request.type.toLowerCase()}: ${limit}% (DIEPO Academic Manual)`,
+    'Validity check: courses older than 5 years require special review',
+    'Blocking of operational / non-homologable courses per internal rules'
   ];
   const alerts = [];
 
@@ -440,36 +440,36 @@ function analyzeRequest() {
       <div class="course-match__header">
         <div>
           <strong>${course.origin}</strong> → <span>${course.dest}</span><br>
-          <small>${course.credits} créditos</small>
+          <small>${course.credits} credits</small>
         </div>
         <div class="course-match__score">${course.match}%</div>
       </div>
       <div class="status ${course.status}">
-        ${course.status === 'success' ? 'Sugerida' : course.status === 'review' ? 'Revisión' : 'No homologable'}
+        ${course.status === 'success' ? 'Suggested' : course.status === 'review' ? 'Review' : 'Not eligible'}
       </div>
     `;
     container.appendChild(item);
 
     if (course.status === 'stop') {
-      alerts.push(`La asignatura ${course.origin} no es homologable (formación operativa o similitud insuficiente).`);
+      alerts.push(`The course ${course.origin} is not homologable (operational training or insufficient similarity).`);
     }
     if (course.match < 60 && course.status !== 'stop') {
-      alerts.push(`La coincidencia de ${course.origin} es baja (<60%), requiere análisis del comité.`);
+      alerts.push(`The match for ${course.origin} is low (<60%), requires committee review.`);
     }
   });
 
   if (percent > limit) {
-    alerts.push(`Se excede el porcentaje máximo permitido (${limit}%). Ajustar recomendaciones.`);
+    alerts.push(`Maximum allowed percentage exceeded (${limit}%). Adjust recommendations.`);
   } else if (percent > limit - 10) {
-    alerts.push(`La solicitud alcanza ${percent}% del plan destino; revisar cuidadosamente el tope de homologación.`);
+    alerts.push(`The request reaches ${percent}% of the target plan; carefully review the homologation cap.`);
   }
   if (request.ageYears >= 5) {
-    alerts.push('Existen asignaturas con más de 5 años: marcar para revisión especial de vigencia.');
+    alerts.push('Some courses are older than 5 years: flag for special validity review.');
   }
 
   rulesList.innerHTML = [...rules, ...alerts].map(rule => `<li>${rule}</li>`).join('');
-  document.getElementById('total-credits').textContent = `${totalCredits} créditos sugeridos`;
-  document.getElementById('percent-credits').textContent = `${percent}% del plan destino (${request.destinationCredits} cr.)`;
+  document.getElementById('total-credits').textContent = `${totalCredits} suggested credits`;
+  document.getElementById('percent-credits').textContent = `${percent}% of target plan (${request.destinationCredits} cr.)`;
 
   renderConcept(request, totalCredits, percent, limit, alerts);
 }
@@ -480,7 +480,7 @@ function renderConcept(request, totalCredits, percent, limit, alerts) {
   const type = document.getElementById('concept-type');
   const approveBtn = document.getElementById('approve-btn');
 
-  title.textContent = `Concepto preliminar ${request.id}`;
+  title.textContent = `Preliminary concept ${request.id}`;
   type.textContent = `${request.type} · ${request.destination}`;
   approveBtn.disabled = false;
 
@@ -488,12 +488,12 @@ function renderConcept(request, totalCredits, percent, limit, alerts) {
   const review = request.courses.filter(c => c.status === 'review').map(c => c.dest).join(', ');
   const blocked = request.courses.filter(c => c.status === 'stop').map(c => c.dest).join(', ');
 
-  const summary = `Se recomienda homologar ${suggested || '—'} por afinidad curricular y equivalencia de créditos (48h/crédito). ` +
-    (review ? `Las asignaturas ${review} requieren evidencia adicional o juicio del comité. ` : '') +
-    (blocked ? `No se homologa ${blocked} por restricción normativa o baja similitud. ` : '') +
-    `El total propuesto es ${totalCredits} créditos (${percent}% del plan destino, límite ${limit}%).`;
+  const summary = `It is recommended to homologate ${suggested || '—'} due to curricular alignment and credit equivalence (48h/credit). ` +
+    (review ? `Courses ${review} require additional evidence or committee judgment. ` : '') +
+    (blocked ? `Do not homologate ${blocked} due to regulatory restriction or low similarity. ` : '') +
+    `Total proposed is ${totalCredits} credits (${percent}% of target plan, limit ${limit}%).`;
 
-  const alertText = alerts.length ? ` Alertas: ${alerts.join(' ')}` : '';
+  const alertText = alerts.length ? ` Alerts: ${alerts.join(' ')}` : '';
   body.textContent = summary + alertText;
 }
 
@@ -541,7 +541,7 @@ function renderDashboard() {
     point.className = 'trend-point';
     point.style.left = `${x}px`;
     point.style.top = `${y}px`;
-    point.title = `Semestre ${idx + 1}: ${value}% aprobación`;
+    point.title = `Semester ${idx + 1}: ${value}% approval`;
     trendChart.appendChild(point);
 
     if (idx > 0) {
